@@ -26,6 +26,15 @@
         margin:0;
         background: #fafafa;
       }
+      topbar-wrapper span:after {
+        content: 'mylogo';
+        color: #3cb371;
+        visibility: visible;
+        display: block;
+        position: absolute;
+        padding: 5px;
+        top: 2px;
+      }
       
     </style>
   </head>
@@ -44,7 +53,7 @@
       
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "/empow.json",
+        url: "https://petstore.swagger.io/v2/swagger.json",
         "dom_id": "#swagger-ui",
         deepLinking: true,
         presets: [
