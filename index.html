@@ -26,7 +26,15 @@
         margin:0;
         background: #fafafa;
       }
-      .swagger-ui::after .info::after .title::after
+      .swagger-ui .info .title::before
+      {
+        display: none;
+        font-size:36px;
+        margin:0;
+        font-family:sans-serif;
+        color:#3b4151
+      }
+      .swagger-ui .info .title::after
       {
         content: 'Api Documentation';
         font-size:36px;
