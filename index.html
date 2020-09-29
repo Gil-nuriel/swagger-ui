@@ -4,8 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Empow API Documentation</title>
-    <link rel="stylesheet" type="text/css" href="/swagger-ui.css"/>
-    <link rel="icon" type="image/x-icon" href="/empow-fav-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="/api/docs/swagger-ui.css"/><!--a nginx path-->
+    <link rel="icon" type="image/x-icon" href="/api/docs/empow-fav-icon.png"/><!--a nginx path-->
     <style>
       html
       {
@@ -43,7 +43,7 @@
       
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "https://192.168.1.153/api/v3/api-docs",
+        url: "/api/v3/api-docs",
         "dom_id": "#swagger-ui",
         deepLinking: true,
         presets: [
